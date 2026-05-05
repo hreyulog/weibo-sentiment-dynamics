@@ -1,0 +1,45 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+
+# Local configuration and secrets
+.env
+Cookie.json
+cookie.json
+*cookie*.txt
+
+# Runtime output
+*.log
+output/
+outputs/
+comment/
+comments/
+duplicates/
+
+# Crawled or regenerated data
+crawl_weibo/data/
+crawl_weibo/weibo/
+crawl_weibo/comment/
+crawl_weibo/duplicates/
+
+# Large local model artifacts
+sentiment_analysis/sentiment/
+sentiment_analysis/bert_sentiment*/
+sentiment_analysis/sgns.weibo.bigram*
+*.h5
+*.keras
+*.ckpt*
+
+# Editors and OS files
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Mathematica autosaves
+*.nb~

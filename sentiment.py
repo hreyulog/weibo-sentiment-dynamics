@@ -1,5 +1,6 @@
 import csv
 import json
+import os
 
 import keras
 import re
@@ -9,12 +10,14 @@ from gensim.models import KeyedVectors
 from transformers import TFBertForSequenceClassification
 import tensorflow as tf
 from transformers import BertTokenizer
-bert2 = TFBertForSequenceClassification.from_pretrained('C:\\Users\hWX1082773\PycharmProjects\pythonProject\opinion_dynamic\opinion_dynamic\sentiment_analysis\\bert_sentiment2')
+bert2 = TFBertForSequenceClassification.from_pretrained(
+    os.getenv("WEIBO_SENTIMENT_BERT_PATH", "sentiment_analysis/bert_sentiment2")
+)
 tokenizer = BertTokenizer.from_pretrained('bert-base-chinese', do_lower_case=True)
 
 
 def predict_sentiment(text, cn_model, model):
-    text = re.sub("[\s+\.\!\/_,$%^*(+\"\']+|[+——！，。？、~@#￥%……&*（）:]+", "", text)
+    text = re.sub(r"[\s\.!/_,$%^*(+\"\']+|[+\u2014\uff01\uff0c\u3002\uff1f\u3001~@#\uffe5%\u2026&*\uff08\uff09:]+", "", text)
     # 分词
     cut = jieba.cut(text)
     cut_list = [i for i in cut]
