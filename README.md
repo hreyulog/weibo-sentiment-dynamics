@@ -107,14 +107,15 @@ Before publishing a derived dataset, verify that it complies with Weibo's terms 
 If this code or data workflow helps your research, please cite:
 
 ```bibtex
-@misc{he2025opiniondynamicsmodelssentiment,
-  title={Opinion Dynamics Models for Sentiment Evolution in Weibo Blogs},
-  author={Yulong He and Anton V. Proskurnikov and Artem Sedakov},
-  year={2025},
-  eprint={2511.15303},
-  archivePrefix={arXiv},
-  primaryClass={cs.SI},
-  url={https://arxiv.org/abs/2511.15303}
+@article{He2026Mapping,
+  author  = {He, Yulong and Proskurnikov, Anton V. and Sedakov, Artem},
+  title   = {Mapping sentiment dependencies among online influencer communities on {Weibo}},
+  journal = {Social Network Analysis and Mining},
+  year    = {2026},
+  month   = sep,
+  doi     = {10.1007/s13278-026-01645-w},
+  url     = {https://doi.org/10.1007/s13278-026-01645-w},
+  issn    = {1869-5469}
 }
 ```
 
