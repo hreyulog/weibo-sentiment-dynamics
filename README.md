@@ -2,7 +2,7 @@
 
 Research code and supporting data workflows for the paper:
 
-> Yulong He, Anton V. Proskurnikov, and Artem Sedakov. *Opinion Dynamics Models for Sentiment Evolution in Weibo Blogs*. arXiv:2511.15303, 2025.
+> He, Y., Proskurnikov, A.V. & Sedakov, A. Mapping sentiment dependencies among online influencer communities on Weibo. Soc. Netw. Anal. Min. (2026).
 
 This repository collects scripts used to crawl Weibo posts and comments, score Chinese-language sentiment, aggregate sentiment trajectories, and fit opinion-dynamics models for Weibo blogger communities.
 
